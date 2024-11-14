@@ -1,0 +1,56 @@
+INFO - 2024-11-10 17:45:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-10 18:19:11 --> ErrorException: include(navbar.php): Failed to open stream: No such file or directory
+[Method: GET, Route: leave-request]
+in APPPATH\Views\Leave_request.php on line 297.
+ 1 APPPATH\Views\Leave_request.php(297): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(navbar.php): Failed to open stream: No such file or directory', 'C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\Leave_request.php', 297)
+ 2 APPPATH\Views\Leave_request.php(297): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\Leave_request.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('leave_request', [], true)
+ 6 APPPATH\Controllers\LeaveRequestController.php(12): view('leave_request')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LeaveRequestController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LeaveRequestController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-10 18:19:45 --> ErrorException: include(employee_sidebar.php): Failed to open stream: No such file or directory
+[Method: GET, Route: leave-request]
+in APPPATH\Views\Leave_request.php on line 297.
+ 1 APPPATH\Views\Leave_request.php(297): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(employee_sidebar.php): Failed to open stream: No such file or directory', 'C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\Leave_request.php', 297)
+ 2 APPPATH\Views\Leave_request.php(297): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\Leave_request.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('leave_request', [], true)
+ 6 APPPATH\Controllers\LeaveRequestController.php(12): view('leave_request')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LeaveRequestController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LeaveRequestController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-10 18:19:49 --> ErrorException: include(employee_sidebar.php): Failed to open stream: No such file or directory
+[Method: GET, Route: leave-request]
+in APPPATH\Views\Leave_request.php on line 297.
+ 1 APPPATH\Views\Leave_request.php(297): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(employee_sidebar.php): Failed to open stream: No such file or directory', 'C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\Leave_request.php', 297)
+ 2 APPPATH\Views\Leave_request.php(297): include()
+ 3 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\Leave_request.php')
+ 4 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('leave_request', [], true)
+ 6 APPPATH\Controllers\LeaveRequestController.php(12): view('leave_request')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LeaveRequestController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LeaveRequestController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-10 18:21:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 18:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 22:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 22:31:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 22:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 22:35:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-10 22:36:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

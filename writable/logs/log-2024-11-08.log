@@ -1,0 +1,141 @@
+INFO - 2024-11-08 11:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 11:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 11:17:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 11:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 11:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 11:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-08 11:34:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "offres/index.php"
+[Method: GET, Route: g_offres]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('offres/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('offres/index', [], true)
+ 3 APPPATH\Controllers\GestionOffreController.php(24): view('offres/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-08 11:34:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "offres/index.php"
+[Method: GET, Route: g_offres]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('offres/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('offres/index', [], true)
+ 3 APPPATH\Controllers\GestionOffreController.php(24): view('offres/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-08 11:40:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "offres/index.php"
+[Method: GET, Route: g_offres]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('offres/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('offres/index', [], true)
+ 3 APPPATH\Controllers\GestionOffreController.php(24): view('offres/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-08 11:40:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "offres/index.php"
+[Method: GET, Route: g_offres]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('offres/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('offres/index', [], true)
+ 3 APPPATH\Controllers\GestionOffreController.php(24): view('offres/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-08 11:41:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "g_offres/index.php"
+[Method: GET, Route: g_offres]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('g_offres/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('g_offres/index', [], true)
+ 3 APPPATH\Controllers\GestionOffreController.php(24): view('g_offres/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-08 11:41:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "g_offres/index.php"
+[Method: GET, Route: g_offres]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('g_offres/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('g_offres/index', [], true)
+ 3 APPPATH\Controllers\GestionOffreController.php(24): view('g_offres/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-08 11:41:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "g_offres/index.php"
+[Method: GET, Route: g_offres]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('g_offres/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('g_offres/index', [], true)
+ 3 APPPATH\Controllers\GestionOffreController.php(24): view('g_offres/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-08 11:41:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "g_offres.php"
+[Method: GET, Route: g_offres]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('g_offres.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('g_offres', [], true)
+ 3 APPPATH\Controllers\GestionOffreController.php(24): view('g_offres', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-08 11:43:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "g_offres.php"
+[Method: GET, Route: g_offres]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('g_offres.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('g_offres', [], true)
+ 3 APPPATH\Controllers\GestionOffreController.php(24): view('g_offres', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-08 11:43:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "g_offres.php"
+[Method: GET, Route: g_offres]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('g_offres.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('g_offres', [], true)
+ 3 APPPATH\Controllers\GestionOffreController.php(24): view('g_offres', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-08 11:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 11:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 11:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 11:48:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-08 11:53:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

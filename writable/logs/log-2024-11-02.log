@@ -1,0 +1,83 @@
+INFO - 2024-11-02 23:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 23:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 23:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 23:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 23:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 23:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 23:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-02 23:39:27 --> mysqli_sql_exception: Table 'ci4_db.candidatures' doesn't exist in C:\Users\PC\Desktop\myApp\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\PC\Desktop\myApp\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ca...', 0)
+#1 C:\Users\PC\Desktop\myApp\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\Users\PC\Desktop\myApp\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\Users\PC\Desktop\myApp\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\Users\PC\Desktop\myApp\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\PC\Desktop\myApp\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\PC\Desktop\myApp\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\PC\Desktop\myApp\app\Controllers\CandidatureController.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\Users\PC\Desktop\myApp\system\CodeIgniter.php(933): App\Controllers\CandidatureController->submit()
+#9 C:\Users\PC\Desktop\myApp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+#10 C:\Users\PC\Desktop\myApp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\PC\Desktop\myApp\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\PC\Desktop\myApp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\PC\Desktop\myApp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\PC\Desktop\myApp\system\rewrite.php(44): require_once('C:\\Users\\PC\\Des...')
+#15 {main}
+CRITICAL - 2024-11-02 23:39:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4_db.candidatures' doesn't exist
+[Method: POST, Route: submit-candidature]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidatures` (`nom`, `prenom`, `email`, `cv`, `lettre`, `photo`) VALUES (:nom:, :prenom:, :email:, :cv:, :lettre:, :photo:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\CandidatureController.php(50): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->submit()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\public\\index.php')
+CRITICAL - 2024-11-02 23:39:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ci4_db.candidatures' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `candidatures` (`nom`, `prenom`, `email`, `cv`, `lettre`, `photo`) VALUES (\'Altit\', \'Hicham\', \'hichamaltit91@gmail.com\', \'1730590767_ccd458b9d3e2acb188ef.pdf\', \'1730590767_83542767029fec4ceb8b.pdf\', \'1730590767_7e80d33acd9717e289fe.png\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `candidatures` (`nom`, `prenom`, `email`, `cv`, `lettre`, `photo`) VALUES (\'Altit\', \'Hicham\', \'hichamaltit91@gmail.com\', \'1730590767_ccd458b9d3e2acb188ef.pdf\', \'1730590767_83542767029fec4ceb8b.pdf\', \'1730590767_7e80d33acd9717e289fe.png\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidatures` (`nom`, `prenom`, `email`, `cv`, `lettre`, `photo`) VALUES (:nom:, :prenom:, :email:, :cv:, :lettre:, :photo:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\CandidatureController.php(50): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->submit()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\public\\index.php')
+CRITICAL - 2024-11-02 23:39:27 --> [Caused by] mysqli_sql_exception: Table 'ci4_db.candidatures' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `candidatures` (`nom`, `prenom`, `email`, `cv`, `lettre`, `photo`) VALUES (\'Altit\', \'Hicham\', \'hichamaltit91@gmail.com\', \'1730590767_ccd458b9d3e2acb188ef.pdf\', \'1730590767_83542767029fec4ceb8b.pdf\', \'1730590767_7e80d33acd9717e289fe.png\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `candidatures` (`nom`, `prenom`, `email`, `cv`, `lettre`, `photo`) VALUES (\'Altit\', \'Hicham\', \'hichamaltit91@gmail.com\', \'1730590767_ccd458b9d3e2acb188ef.pdf\', \'1730590767_83542767029fec4ceb8b.pdf\', \'1730590767_7e80d33acd9717e289fe.png\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `candidatures` (`nom`, `prenom`, `email`, `cv`, `lettre`, `photo`) VALUES (\'Altit\', \'Hicham\', \'hichamaltit91@gmail.com\', \'1730590767_ccd458b9d3e2acb188ef.pdf\', \'1730590767_83542767029fec4ceb8b.pdf\', \'1730590767_7e80d33acd9717e289fe.png\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidatures` (`nom`, `prenom`, `email`, `cv`, `lettre`, `photo`) VALUES (:nom:, :prenom:, :email:, :cv:, :lettre:, :photo:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\CandidatureController.php(50): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->submit()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\public\\index.php')
+INFO - 2024-11-02 23:43:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 23:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 23:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 23:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 23:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 23:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 23:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 23:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 23:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-02 23:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

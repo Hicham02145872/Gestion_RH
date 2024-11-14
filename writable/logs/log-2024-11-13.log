@@ -1,0 +1,803 @@
+INFO - 2024-11-13 14:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 14:30:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 14:30:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 14:31:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 14:32:04 --> Error: Class "CodeIgniter\Entity" not found
+[Method: POST, Route: submit-candidature]
+in APPPATH\Entities\Candidature.php on line 6.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Entities\\Candidature.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Entities\\Candidature')
+ 4 APPPATH\Controllers\CandidatureController.php(41): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Entities\\Candidature')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->submit()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-13 14:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 14:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 14:34:16 --> Error: Cannot use object of type App\Entities\Candidature as array
+[Method: GET, Route: generate-receipt/90]
+in APPPATH\Views\receipt.php on line 137.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('receipt', [], true)
+ 4 APPPATH\Controllers\PDFController.php(21): view('receipt', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PDFController->generateReceipt('90')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDFController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-13 14:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 14:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 14:35:59 --> Error: Cannot use object of type App\Entities\Candidature as array
+[Method: GET, Route: generate-receipt/91]
+in APPPATH\Views\receipt.php on line 152.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('receipt', [], true)
+ 4 APPPATH\Controllers\PDFController.php(21): view('receipt', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PDFController->generateReceipt('91')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PDFController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-13 14:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 14:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-13 14:51:37 --> mysqli_sql_exception: Unknown column 'offres.deleted_at' in 'where clause' in C:\Users\PC\Desktop\myApp\myApp\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\PC\Desktop\myApp\myApp\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\PC\Desktop\myApp\myApp\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\PC\Desktop\myApp\myApp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\PC\Desktop\myApp\myApp\app\Controllers\GestionOffreController.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+#8 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+#9 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\PC\Desktop\myApp\myApp\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\PC\Desktop\myApp\myApp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\PC\Desktop\myApp\myApp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\PC\Desktop\myApp\myApp\system\rewrite.php(44): require_once('C:\\Users\\PC\\Des...')
+#14 {main}
+CRITICAL - 2024-11-13 14:51:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'offres.deleted_at' in 'where clause'
+[Method: GET, Route: g_offres]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\GestionOffreController.php(23): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 14:51:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'offres.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\GestionOffreController.php(23): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 14:51:37 --> [Caused by] mysqli_sql_exception: Unknown column 'offres.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\GestionOffreController.php(23): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+ERROR - 2024-11-13 14:51:38 --> mysqli_sql_exception: Unknown column 'offres.deleted_at' in 'where clause' in C:\Users\PC\Desktop\myApp\myApp\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\PC\Desktop\myApp\myApp\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\PC\Desktop\myApp\myApp\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\PC\Desktop\myApp\myApp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\PC\Desktop\myApp\myApp\app\Controllers\GestionOffreController.php(23): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+#8 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+#9 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\PC\Desktop\myApp\myApp\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\PC\Desktop\myApp\myApp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\PC\Desktop\myApp\myApp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\PC\Desktop\myApp\myApp\system\rewrite.php(44): require_once('C:\\Users\\PC\\Des...')
+#14 {main}
+CRITICAL - 2024-11-13 14:51:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'offres.deleted_at' in 'where clause'
+[Method: GET, Route: g_offres]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\GestionOffreController.php(23): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 14:51:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'offres.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\GestionOffreController.php(23): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 14:51:38 --> [Caused by] mysqli_sql_exception: Unknown column 'offres.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\GestionOffreController.php(23): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 14:54:44 --> ErrorException: Cannot declare class App\Database\Migrations\CreateOffresTable, because the name is already in use
+[Method: CLI, Route: migrate]
+in APPPATH\Database\Migrations\2024-11-09-152940_CreateOffresTable.php on line 7.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-11-13 14:57:35 --> TypeError: mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Offre given
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\MySQLi\Result.php on line 156.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(156): mysqli_result->fetch_object('App\\Entities\\Offre')
+ 2 SYSTEMPATH\Database\BaseResult.php(161): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Offre')
+ 3 SYSTEMPATH\Database\BaseResult.php(116): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Offre')
+ 4 SYSTEMPATH\Model.php(287): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Offre')
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\OffreController.php(12): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OffreController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OffreController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 14:58:57 --> TypeError: mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Offre given
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\MySQLi\Result.php on line 156.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(156): mysqli_result->fetch_object('App\\Entities\\Offre')
+ 2 SYSTEMPATH\Database\BaseResult.php(161): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Offre')
+ 3 SYSTEMPATH\Database\BaseResult.php(116): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Offre')
+ 4 SYSTEMPATH\Model.php(287): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Offre')
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\OffreController.php(12): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OffreController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OffreController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 15:00:26 --> TypeError: mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Offre given
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\MySQLi\Result.php on line 156.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(156): mysqli_result->fetch_object('App\\Entities\\Offre')
+ 2 SYSTEMPATH\Database\BaseResult.php(161): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Offre')
+ 3 SYSTEMPATH\Database\BaseResult.php(116): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Offre')
+ 4 SYSTEMPATH\Model.php(287): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Offre')
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\OffreController.php(12): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OffreController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OffreController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 15:05:14 --> TypeError: mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Offre given
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\MySQLi\Result.php on line 156.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(156): mysqli_result->fetch_object('App\\Entities\\Offre')
+ 2 SYSTEMPATH\Database\BaseResult.php(161): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Offre')
+ 3 SYSTEMPATH\Database\BaseResult.php(116): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Offre')
+ 4 SYSTEMPATH\Model.php(287): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Offre')
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\OffreController.php(12): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OffreController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OffreController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 15:09:09 --> TypeError: mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Offre given
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\MySQLi\Result.php on line 156.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(156): mysqli_result->fetch_object('App\\Entities\\Offre')
+ 2 SYSTEMPATH\Database\BaseResult.php(161): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Offre')
+ 3 SYSTEMPATH\Database\BaseResult.php(116): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Offre')
+ 4 SYSTEMPATH\Model.php(287): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Offre')
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\OffreModel.php(18): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\GestionOffreController.php(23): App\Models\OffreModel->getOffres()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 15:17:14 --> TypeError: mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Offre given
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\MySQLi\Result.php on line 156.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(156): mysqli_result->fetch_object('App\\Entities\\Offre')
+ 2 SYSTEMPATH\Database\BaseResult.php(161): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Offre')
+ 3 SYSTEMPATH\Database\BaseResult.php(116): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Offre')
+ 4 SYSTEMPATH\Model.php(287): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Offre')
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\GestionOffreController.php(22): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 15:21:03 --> TypeError: mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Offre given
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\MySQLi\Result.php on line 156.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(156): mysqli_result->fetch_object('App\\Entities\\Offre')
+ 2 SYSTEMPATH\Database\BaseResult.php(161): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Offre')
+ 3 SYSTEMPATH\Database\BaseResult.php(116): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Offre')
+ 4 SYSTEMPATH\Model.php(287): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Offre')
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\OffreModel.php(18): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\GestionOffreController.php(23): App\Models\OffreModel->getOffres()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 15:29:29 --> TypeError: mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Offre given
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\MySQLi\Result.php on line 156.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(156): mysqli_result->fetch_object('App\\Entities\\Offre')
+ 2 SYSTEMPATH\Database\BaseResult.php(161): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Offre')
+ 3 SYSTEMPATH\Database\BaseResult.php(116): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Offre')
+ 4 SYSTEMPATH\Model.php(287): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Offre')
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\OffreModel.php(18): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\GestionOffreController.php(23): App\Models\OffreModel->getOffres()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 15:33:36 --> TypeError: mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Offre given
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\MySQLi\Result.php on line 156.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(156): mysqli_result->fetch_object('App\\Entities\\Offre')
+ 2 SYSTEMPATH\Database\BaseResult.php(161): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Offre')
+ 3 SYSTEMPATH\Database\BaseResult.php(116): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Offre')
+ 4 SYSTEMPATH\Model.php(287): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Offre')
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\OffreModel.php(18): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\GestionOffreController.php(23): App\Models\OffreModel->getOffres()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 15:35:52 --> TypeError: mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Offre given
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\MySQLi\Result.php on line 156.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(156): mysqli_result->fetch_object('App\\Entities\\Offre')
+ 2 SYSTEMPATH\Database\BaseResult.php(161): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Offre')
+ 3 SYSTEMPATH\Database\BaseResult.php(116): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Offre')
+ 4 SYSTEMPATH\Model.php(287): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Offre')
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\OffreModel.php(16): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\GestionOffreController.php(23): App\Models\OffreModel->getOffres()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 15:37:38 --> TypeError: mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, app\Entities\Offre given
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\MySQLi\Result.php on line 156.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(156): mysqli_result->fetch_object('app\\Entities\\Offre')
+ 2 SYSTEMPATH\Database\BaseResult.php(161): CodeIgniter\Database\MySQLi\Result->fetchObject('app\\Entities\\Offre')
+ 3 SYSTEMPATH\Database\BaseResult.php(116): CodeIgniter\Database\BaseResult->getCustomResultObject('app\\Entities\\Offre')
+ 4 SYSTEMPATH\Model.php(287): CodeIgniter\Database\BaseResult->getResult('app\\Entities\\Offre')
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\OffreModel.php(16): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\GestionOffreController.php(23): app\Models\OffreModel->getOffres()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 15:41:18 --> TypeError: mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Offre given
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\MySQLi\Result.php on line 156.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(156): mysqli_result->fetch_object('App\\Entities\\Offre')
+ 2 SYSTEMPATH\Database\BaseResult.php(161): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Offre')
+ 3 SYSTEMPATH\Database\BaseResult.php(116): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Offre')
+ 4 SYSTEMPATH\Model.php(287): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Offre')
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\GestionOffreController.php(13): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 15:45:54 --> TypeError: mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Offre given
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\MySQLi\Result.php on line 156.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(156): mysqli_result->fetch_object('App\\Entities\\Offre')
+ 2 SYSTEMPATH\Database\BaseResult.php(161): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Offre')
+ 3 SYSTEMPATH\Database\BaseResult.php(116): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Offre')
+ 4 SYSTEMPATH\Model.php(287): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Offre')
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\GestionOffreController.php(13): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 15:49:06 --> TypeError: mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Offre given
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\MySQLi\Result.php on line 156.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(156): mysqli_result->fetch_object('App\\Entities\\Offre')
+ 2 SYSTEMPATH\Database\BaseResult.php(161): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Offre')
+ 3 SYSTEMPATH\Database\BaseResult.php(116): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Offre')
+ 4 SYSTEMPATH\Model.php(287): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Offre')
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\GestionOffreController.php(13): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 15:51:48 --> TypeError: mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Offre given
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\MySQLi\Result.php on line 156.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(156): mysqli_result->fetch_object('App\\Entities\\Offre')
+ 2 SYSTEMPATH\Database\BaseResult.php(161): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Offre')
+ 3 SYSTEMPATH\Database\BaseResult.php(116): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Offre')
+ 4 SYSTEMPATH\Model.php(287): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Offre')
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\GestionOffreController.php(13): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+ERROR - 2024-11-13 15:52:29 --> Error connecting to the database: mysqli_sql_exception: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\PC\Desktop\myApp\myApp\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 C:\Users\PC\Desktop\myApp\myApp\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'ci4_db', 3306, '', 0)
+#1 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\PC\Desktop\myApp\myApp\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\PC\Desktop\myApp\myApp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\PC\Desktop\myApp\myApp\app\Controllers\GestionOffreController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+#8 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+#9 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\PC\Desktop\myApp\myApp\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\PC\Desktop\myApp\myApp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\PC\Desktop\myApp\myApp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\PC\Desktop\myApp\myApp\system\rewrite.php(44): require_once('C:\\Users\\PC\\Des...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\PC\Desktop\myApp\myApp\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\PC\Desktop\myApp\myApp\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\PC\Desktop\myApp\myApp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\PC\Desktop\myApp\myApp\app\Controllers\GestionOffreController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+#7 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+#8 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\PC\Desktop\myApp\myApp\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\PC\Desktop\myApp\myApp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\PC\Desktop\myApp\myApp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\PC\Desktop\myApp\myApp\system\rewrite.php(44): require_once('C:\\Users\\PC\\Des...')
+#13 {main}
+CRITICAL - 2024-11-13 15:52:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `offres`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\GestionOffreController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 15:52:49 --> TypeError: mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Offre given
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\MySQLi\Result.php on line 156.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(156): mysqli_result->fetch_object('App\\Entities\\Offre')
+ 2 SYSTEMPATH\Database\BaseResult.php(161): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Offre')
+ 3 SYSTEMPATH\Database\BaseResult.php(116): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Offre')
+ 4 SYSTEMPATH\Model.php(287): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Offre')
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\GestionOffreController.php(13): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 20:16:31 --> TypeError: mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, App\Entities\Offre given
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\MySQLi\Result.php on line 156.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(156): mysqli_result->fetch_object('App\\Entities\\Offre')
+ 2 SYSTEMPATH\Database\BaseResult.php(161): CodeIgniter\Database\MySQLi\Result->fetchObject('App\\Entities\\Offre')
+ 3 SYSTEMPATH\Database\BaseResult.php(116): CodeIgniter\Database\BaseResult->getCustomResultObject('App\\Entities\\Offre')
+ 4 SYSTEMPATH\Model.php(287): CodeIgniter\Database\BaseResult->getResult('App\\Entities\\Offre')
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\GestionOffreController.php(13): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 20:18:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "offres.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('offres.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('offres', [], true)
+ 3 APPPATH\Controllers\GestionOffreController.php(15): view('offres', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-13 20:21:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 20:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 20:32:39 --> ErrorException: Undefined variable $offres
+[Method: GET, Route: g_offres]
+in APPPATH\Views\g_offres.php on line 389.
+ 1 APPPATH\Views\g_offres.php(389): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $offres', 'C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\g_offres.php', 389)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\g_offres.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('g_offres', [], true)
+ 5 APPPATH\Controllers\GestionOffreController.php(12): view('g_offres')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-13 20:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 20:36:02 --> Error: Cannot use object of type App\Entities\Offre as array
+[Method: GET, Route: g_offres]
+in APPPATH\Views\g_offres.php on line 400.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('g_offres', [], true)
+ 4 APPPATH\Controllers\GestionOffreController.php(19): view('g_offres', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-13 20:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 20:42:19 --> CodeIgniter\Validation\Exceptions\ValidationException: "required " is not a valid rule.
+[Method: POST, Route: g_offres/store]
+in SYSTEMPATH\Validation\Validation.php on line 348.
+ 1 SYSTEMPATH\Validation\Validation.php(348): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('required ')
+ 2 SYSTEMPATH\Validation\Validation.php(204): CodeIgniter\Validation\Validation->processRules('description', 'description', 'Le responsable des ressources humaines travaille généralement dans un environnement de bureau et peut être amené à se déplacer dans plusieurs sites de l\'entreprise', [...], [...], 'description')
+ 3 SYSTEMPATH\Controller.php(137): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\GestionOffreController.php(28): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->store()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-13 20:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 20:43:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 20:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 20:44:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 20:45:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "edit_offre.php"
+[Method: GET, Route: g_offres/edit/22]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_offre.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit_offre', [], true)
+ 3 APPPATH\Controllers\GestionOffreController.php(53): view('edit_offre', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->edit('22')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-13 20:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 20:46:31 --> Error: Cannot use object of type App\Entities\Offre as array
+[Method: GET, Route: g_offres/edit/22]
+in APPPATH\Views\edit_offre.php on line 247.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit_offre', [], true)
+ 4 APPPATH\Controllers\GestionOffreController.php(53): view('edit_offre', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->edit('22')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-13 21:23:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 21:23:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 21:23:34 --> Error: Cannot use object of type App\Entities\Offre as array
+[Method: GET, Route: g_offres/edit/22]
+in APPPATH\Views\edit_offre.php on line 247.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit_offre', [], true)
+ 4 APPPATH\Controllers\GestionOffreController.php(60): view('edit_offre', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->edit('22')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+ERROR - 2024-11-13 21:36:00 --> mysqli_sql_exception: Unknown column 'offres.deleted_at' in 'where clause' in C:\Users\PC\Desktop\myApp\myApp\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\PC\Desktop\myApp\myApp\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\PC\Desktop\myApp\myApp\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\PC\Desktop\myApp\myApp\system\BaseModel.php(610): CodeIgniter\Model->doFind(true, '22')
+#6 C:\Users\PC\Desktop\myApp\myApp\app\Controllers\GestionOffreController.php(53): CodeIgniter\BaseModel->find('22')
+#7 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(933): App\Controllers\GestionOffreController->edit('22')
+#8 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+#9 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\PC\Desktop\myApp\myApp\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\PC\Desktop\myApp\myApp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\PC\Desktop\myApp\myApp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\PC\Desktop\myApp\myApp\system\rewrite.php(44): require_once('C:\\Users\\PC\\Des...')
+#14 {main}
+CRITICAL - 2024-11-13 21:36:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'offres.deleted_at' in 'where clause'
+[Method: GET, Route: g_offres/edit/22]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL
+AND `offres`.`id` = :offres.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, '22')
+ 4 APPPATH\Controllers\GestionOffreController.php(53): CodeIgniter\BaseModel->find('22')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->edit('22')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 21:36:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'offres.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL
+AND `offres`.`id` = \'22\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL
+AND `offres`.`id` = \'22\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL
+AND `offres`.`id` = :offres.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, '22')
+ 6 APPPATH\Controllers\GestionOffreController.php(53): CodeIgniter\BaseModel->find('22')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->edit('22')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 21:36:00 --> [Caused by] mysqli_sql_exception: Unknown column 'offres.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL
+AND `offres`.`id` = \'22\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL
+AND `offres`.`id` = \'22\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL
+AND `offres`.`id` = \'22\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL
+AND `offres`.`id` = :offres.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, '22')
+ 7 APPPATH\Controllers\GestionOffreController.php(53): CodeIgniter\BaseModel->find('22')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->edit('22')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-13 21:38:08 --> Error: Class "App\Models\Model" not found
+[Method: GET, Route: g_offres/edit/22]
+in APPPATH\Models\OffreModel.php on line 8.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Models\\OffreModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\OffreModel')
+ 4 APPPATH\Controllers\GestionOffreController.php(52): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\OffreModel')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->edit('22')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-13 21:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 21:38:22 --> Error: Cannot use object of type App\Entities\Offre as array
+[Method: GET, Route: g_offres/edit/22]
+in APPPATH\Views\edit_offre.php on line 255.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit_offre', [], true)
+ 4 APPPATH\Controllers\GestionOffreController.php(60): view('edit_offre', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->edit('22')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-13 21:39:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-13 21:39:16 --> Error: Cannot use object of type App\Entities\Offre as array
+[Method: GET, Route: g_offres/edit/22]
+in APPPATH\Views\edit_offre.php on line 263.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('edit_offre', [], true)
+ 4 APPPATH\Controllers\GestionOffreController.php(60): view('edit_offre', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\GestionOffreController->edit('22')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GestionOffreController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-13 21:39:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 21:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 21:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 21:40:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 21:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 21:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 21:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 21:40:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 21:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 21:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 21:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 22:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 22:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 22:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 22:05:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 22:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 22:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 22:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 22:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 23:19:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 23:19:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 23:19:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 23:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-13 23:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

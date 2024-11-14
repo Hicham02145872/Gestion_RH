@@ -1,0 +1,96 @@
+INFO - 2024-11-04 10:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-04 10:58:26 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.gmail.com failed: H�te inconnu.  in C:\Users\PC\Desktop\myApp\system\Email\Email.php:1901
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): ph...', 'C:\\Users\\PC\\Des...', 1901)
+#1 C:\Users\PC\Desktop\myApp\system\Email\Email.php(1901): fsockopen('smtp.gmail.com', 587, NULL, NULL, 5)
+#2 C:\Users\PC\Desktop\myApp\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\Users\PC\Desktop\myApp\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\Users\PC\Desktop\myApp\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\Users\PC\Desktop\myApp\app\Controllers\ResetPasswordController.php(88): CodeIgniter\Email\Email->send()
+#6 C:\Users\PC\Desktop\myApp\app\Controllers\ResetPasswordController.php(37): App\Controllers\ResetPasswordController->sendResetEmail('hichamaltit91@g...', 'http://localhos...')
+#7 C:\Users\PC\Desktop\myApp\system\CodeIgniter.php(933): App\Controllers\ResetPasswordController->sendToken()
+#8 C:\Users\PC\Desktop\myApp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ResetPasswordController))
+#9 C:\Users\PC\Desktop\myApp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\PC\Desktop\myApp\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\PC\Desktop\myApp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\PC\Desktop\myApp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\PC\Desktop\myApp\system\rewrite.php(44): require_once('C:\\Users\\PC\\Des...')
+#14 {main}
+ERROR - 2024-11-04 10:58:26 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2024-11-04 10:58:26 --> 
+ERROR - 2024-11-04 10:58:26 --> Failed to send password reset email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Mon, 4 Nov 2024 10:58:26 +0000
+To: hichamaltit91@gmail.com
+From: &quot;Gestion RH&quot; &lt;mehdialtit@gmail.com&gt;
+Return-Path: &lt;mehdialtit@gmail.com&gt;
+Subject: =?UTF-8?Q?Password=20Reset=20Request?=
+Reply-To: &lt;mehdialtit@gmail.com&gt;
+User-Agent: CodeIgniter
+X-Sender: mehdialtit@gmail.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6728a8d26e2e40.17126105@gmail.com&gt;
+Mime-Version: 1.0
+
+</pre>
+INFO - 2024-11-04 10:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 11:02:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 11:02:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 11:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 11:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 11:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-04 11:13:13 --> TypeError: number_format(): Argument #1 ($num) must be of type float, string given
+[Method: GET, Route: offres]
+in APPPATH\Views\loading_page.php on line 323.
+ 1 APPPATH\Views\loading_page.php(323): number_format('2000dh', 0, ',', ' ')
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\app\\Views\\loading_page.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loading_page', [], true)
+ 5 APPPATH\Controllers\OffreController.php(14): view('loading_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OffreController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OffreController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\public\\index.php')
+CRITICAL - 2024-11-04 11:17:37 --> ErrorException: Undefined array key "entreprise"
+[Method: GET, Route: offres]
+in APPPATH\Views\loading_page.php on line 720.
+ 1 APPPATH\Views\loading_page.php(720): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "entreprise"', 'C:\\Users\\PC\\Desktop\\myApp\\app\\Views\\loading_page.php', 720)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\app\\Views\\loading_page.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loading_page', [], true)
+ 5 APPPATH\Controllers\OffreController.php(14): view('loading_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OffreController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OffreController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\public\\index.php')
+CRITICAL - 2024-11-04 11:17:42 --> ErrorException: Undefined array key "entreprise"
+[Method: GET, Route: offres]
+in APPPATH\Views\loading_page.php on line 720.
+ 1 APPPATH\Views\loading_page.php(720): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "entreprise"', 'C:\\Users\\PC\\Desktop\\myApp\\app\\Views\\loading_page.php', 720)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\app\\Views\\loading_page.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('loading_page', [], true)
+ 5 APPPATH\Controllers\OffreController.php(14): view('loading_page', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OffreController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OffreController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\public\\index.php')
+INFO - 2024-11-04 12:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 12:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 12:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 12:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 13:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 13:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 13:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 13:14:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 13:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 13:17:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-04 13:17:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
