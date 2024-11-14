@@ -19,10 +19,10 @@ class LeaveRequestController extends Controller
 
         
         if ($this->validate([
-            'employee_name' => 'required-min_length[3]-max_length[255]',
+            'employee_name' => 'required|min_length[3]',
             'start_date' => 'required|valid_date',
             'end_date' => 'required|valid_date',
-            'reason' => 'required|min_length[10]-max_length[255]',
+            'reason' => 'required|min_length[10]',
         ])) {
         
             $leaveRequest = new LeaveRequest();
