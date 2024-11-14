@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Entities\LeaveRequest;
 use App\Models\LeaveRequestModel;
 use CodeIgniter\Controller;
 
@@ -16,22 +17,21 @@ class LeaveRequestController extends Controller
     {
         $model = new LeaveRequestModel();
 
-        // Validation des champs du formulaire
+        
         if ($this->validate([
-            'employee_name' => 'required',
+            'employee_name' => 'required-min_length[3]-max_length[255]',
             'start_date' => 'required|valid_date',
             'end_date' => 'required|valid_date',
-            'reason' => 'required',
+            'reason' => 'required|min_length[10]-max_length[255]',
         ])) {
-            $data = [
-                'employee_name' => $this->request->getPost('employee_name'),
-                'start_date' => $this->request->getPost('start_date'),
-                'end_date' => $this->request->getPost('end_date'),
-                'reason' => $this->request->getPost('reason'),
-                'status' => 'Pending',
-            ];
-
-            $model->insert($data);
+        
+            $leaveRequest = new LeaveRequest();
+            $leaveRequest->employee_name = $this->request->getPost('employee_name');
+            $leaveRequest->start_date = $this->request->getPost('start_date');
+            $leaveRequest->end_date = $this->request->getPost('end_date');
+            $leaveRequest->reason = $this->request->getPost('reason');
+           
+            $model->insert($leaveRequest);
 
             return redirect()->to('/leave-request')->with('success', 'Demande de congé envoyée avec succès');
         } else {
