@@ -13,7 +13,6 @@ class LeaveRequest extends Entity
         'type' => null,
         'end_date' => null,
         'reason' => null,
-        'status' => null,
     ];
 
     // Optional: Define any mutators or custom methods here if needed
