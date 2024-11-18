@@ -1,11 +1,12 @@
 <?php
 namespace App\Controllers;
+use CodeIgniter\Controller;
 
 use App\Models\CandidatureModel;
 use Dompdf\Dompdf;
 use Dompdf\Options;
 
-class PDFController extends BaseController
+class PDFController extends Controller
 {
     public function generateReceipt($id)
     {
