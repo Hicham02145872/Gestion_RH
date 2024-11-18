@@ -302,7 +302,7 @@
                                     <?= esc($offre->salaire); ?> MAD
                                 </span>
                             </div>
-                            <a href="<?= site_url('candidature') ?>" class="apply-button">Postuler maintenant</a>
+                            <a href="<?= site_url('candidature/apply/' . $offre->id) ?>"class="apply-button">Postuler maintenant</a>
 
                         </div>
                     <?php endforeach; ?>
