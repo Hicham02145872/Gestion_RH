@@ -1,0 +1,454 @@
+INFO - 2024-11-18 14:13:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-18 14:14:33 --> mysqli_sql_exception: Unknown column 'offre_id' in 'field list' in C:\Users\PC\Desktop\myApp\myApp\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\PC\Desktop\myApp\myApp\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ca...', 0)
+#1 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ca...')
+#2 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ca...')
+#3 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\Users\PC\Desktop\myApp\myApp\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\PC\Desktop\myApp\myApp\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\PC\Desktop\myApp\myApp\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\PC\Desktop\myApp\myApp\app\Controllers\CandidatureController.php(66): CodeIgniter\Model->insert(Object(App\Entities\Candidature))
+#8 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(933): App\Controllers\CandidatureController->submit()
+#9 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+#10 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\PC\Desktop\myApp\myApp\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\PC\Desktop\myApp\myApp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\PC\Desktop\myApp\myApp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\PC\Desktop\myApp\myApp\system\rewrite.php(44): require_once('C:\\Users\\PC\\Des...')
+#15 {main}
+CRITICAL - 2024-11-18 14:14:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'offre_id' in 'field list'
+[Method: POST, Route: submit-candidature/]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidatures` (`nom`, `prenom`, `email`, `cv`, `lettre`, `photo`, `offre_id`, `created_at`, `updated_at`) VALUES (:nom:, :prenom:, :email:, :cv:, :lettre:, :photo:, :offre_id:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\CandidatureController.php(66): CodeIgniter\Model->insert(Object(App\Entities\Candidature))
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->submit()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-18 14:14:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'offre_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `candidatures` (`nom`, `prenom`, `email`, `cv`, `lettre`, `photo`, `offre_id`, `created_at`, `updated_at`) VALUES (\'test\', \'test\', \'test@gmail.com\', \'1731939273_3a0b611af835b15ef3ae.pdf\', \'1731939273_9a0fe392ed9a29d48750.pdf\', \'1731939273_a837e47d803be230ee0e.jpg\', \'1\', \'2024-11-18 14:14:33\', \'2024-11-18 14:14:33\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `candidatures` (`nom`, `prenom`, `email`, `cv`, `lettre`, `photo`, `offre_id`, `created_at`, `updated_at`) VALUES (\'test\', \'test\', \'test@gmail.com\', \'1731939273_3a0b611af835b15ef3ae.pdf\', \'1731939273_9a0fe392ed9a29d48750.pdf\', \'1731939273_a837e47d803be230ee0e.jpg\', \'1\', \'2024-11-18 14:14:33\', \'2024-11-18 14:14:33\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidatures` (`nom`, `prenom`, `email`, `cv`, `lettre`, `photo`, `offre_id`, `created_at`, `updated_at`) VALUES (:nom:, :prenom:, :email:, :cv:, :lettre:, :photo:, :offre_id:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\CandidatureController.php(66): CodeIgniter\Model->insert(Object(App\Entities\Candidature))
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->submit()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-18 14:14:33 --> [Caused by] mysqli_sql_exception: Unknown column 'offre_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `candidatures` (`nom`, `prenom`, `email`, `cv`, `lettre`, `photo`, `offre_id`, `created_at`, `updated_at`) VALUES (\'test\', \'test\', \'test@gmail.com\', \'1731939273_3a0b611af835b15ef3ae.pdf\', \'1731939273_9a0fe392ed9a29d48750.pdf\', \'1731939273_a837e47d803be230ee0e.jpg\', \'1\', \'2024-11-18 14:14:33\', \'2024-11-18 14:14:33\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `candidatures` (`nom`, `prenom`, `email`, `cv`, `lettre`, `photo`, `offre_id`, `created_at`, `updated_at`) VALUES (\'test\', \'test\', \'test@gmail.com\', \'1731939273_3a0b611af835b15ef3ae.pdf\', \'1731939273_9a0fe392ed9a29d48750.pdf\', \'1731939273_a837e47d803be230ee0e.jpg\', \'1\', \'2024-11-18 14:14:33\', \'2024-11-18 14:14:33\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `candidatures` (`nom`, `prenom`, `email`, `cv`, `lettre`, `photo`, `offre_id`, `created_at`, `updated_at`) VALUES (\'test\', \'test\', \'test@gmail.com\', \'1731939273_3a0b611af835b15ef3ae.pdf\', \'1731939273_9a0fe392ed9a29d48750.pdf\', \'1731939273_a837e47d803be230ee0e.jpg\', \'1\', \'2024-11-18 14:14:33\', \'2024-11-18 14:14:33\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `candidatures` (`nom`, `prenom`, `email`, `cv`, `lettre`, `photo`, `offre_id`, `created_at`, `updated_at`) VALUES (:nom:, :prenom:, :email:, :cv:, :lettre:, :photo:, :offre_id:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\CandidatureController.php(66): CodeIgniter\Model->insert(Object(App\Entities\Candidature))
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->submit()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+ERROR - 2024-11-18 14:29:34 --> mysqli_sql_exception: Unknown column 'offres.deleted_at' in 'where clause' in C:\Users\PC\Desktop\myApp\myApp\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\Users\PC\Desktop\myApp\myApp\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\PC\Desktop\myApp\myApp\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\PC\Desktop\myApp\myApp\system\BaseModel.php(610): CodeIgniter\Model->doFind(true, '1')
+#6 C:\Users\PC\Desktop\myApp\myApp\app\Controllers\CandidatureController.php(16): CodeIgniter\BaseModel->find('1')
+#7 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(933): App\Controllers\CandidatureController->apply('1')
+#8 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+#9 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\PC\Desktop\myApp\myApp\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\PC\Desktop\myApp\myApp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\PC\Desktop\myApp\myApp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\PC\Desktop\myApp\myApp\system\rewrite.php(44): require_once('C:\\Users\\PC\\Des...')
+#14 {main}
+CRITICAL - 2024-11-18 14:29:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'offres.deleted_at' in 'where clause'
+[Method: GET, Route: candidature/apply/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL
+AND `offres`.`id` = :offres.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\CandidatureController.php(16): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->apply('1')
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-18 14:29:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'offres.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL
+AND `offres`.`id` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL
+AND `offres`.`id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL
+AND `offres`.`id` = :offres.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, '1')
+ 6 APPPATH\Controllers\CandidatureController.php(16): CodeIgniter\BaseModel->find('1')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->apply('1')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-18 14:29:34 --> [Caused by] mysqli_sql_exception: Unknown column 'offres.deleted_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL
+AND `offres`.`id` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL
+AND `offres`.`id` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL
+AND `offres`.`id` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL
+AND `offres`.`id` = :offres.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(610): CodeIgniter\Model->doFind(true, '1')
+ 7 APPPATH\Controllers\CandidatureController.php(16): CodeIgniter\BaseModel->find('1')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->apply('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-18 14:30:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 14:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 14:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 14:33:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 14:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 14:34:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-18 14:34:38 --> Error: Class "App\Controllers\BaseController" not found
+[Method: GET, Route: generate-receipt/1]
+in APPPATH\Controllers\PDFController.php on line 8.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Controllers\\PDFController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\PDFController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\PDFController')
+ 5 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\PDFController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-18 14:35:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 14:35:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 14:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 14:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 14:37:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 14:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 14:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 14:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 14:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 14:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 14:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 14:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 15:39:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 15:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 15:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 15:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 15:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 15:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-18 18:03:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "candidats_view.php"
+[Method: GET, Route: candidats]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('candidats_view.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('candidats_view', [], true)
+ 3 APPPATH\Controllers\CandidatureController.php(89): view('candidats_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->candidates()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-18 18:04:06 --> ErrorException: Undefined variable $offre
+[Method: GET, Route: candidats]
+in APPPATH\Views\candidats.php on line 88.
+ 1 APPPATH\Views\candidats.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $offre', 'C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\candidats.php', 88)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\candidats.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('candidats', [], true)
+ 5 APPPATH\Controllers\CandidatureController.php(89): view('candidats', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->candidates()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-18 18:09:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 18:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 18:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 18:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-18 18:22:20 --> Error: Class "codeigniter\Controller" not found
+[Method: GET, Route: offres]
+in APPPATH\Controllers\OffreController.php on line 7.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Controllers\\OffreController.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\OffreController')
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\OffreController')
+ 5 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\OffreController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-18 18:32:46 --> ErrorException: Undefined variable $offres
+[Method: GET, Route: candidats/1]
+in APPPATH\Views\candidats.php on line 128.
+ 1 APPPATH\Views\candidats.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $offres', 'C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\candidats.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\candidats.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('candidats', [], true)
+ 5 APPPATH\Controllers\CandidatureController.php(98): view('candidats', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->candidates('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-18 18:32:53 --> ErrorException: Undefined variable $offres
+[Method: GET, Route: candidats/1]
+in APPPATH\Views\candidats.php on line 128.
+ 1 APPPATH\Views\candidats.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $offres', 'C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\candidats.php', 128)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\candidats.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('candidats', [], true)
+ 5 APPPATH\Controllers\CandidatureController.php(98): view('candidats', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->candidates('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-18 20:02:20 --> ErrorException: Undefined variable $candidats
+[Method: GET, Route: candidats/1]
+in APPPATH\Views\candidats.php on line 294.
+ 1 APPPATH\Views\candidats.php(294): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidats', 'C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\candidats.php', 294)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\candidats.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('candidats', [], true)
+ 5 APPPATH\Controllers\CandidatureController.php(98): view('candidats', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->candidates('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-18 20:04:17 --> ErrorException: Undefined variable $candidats
+[Method: GET, Route: candidats/1]
+in APPPATH\Views\candidats.php on line 294.
+ 1 APPPATH\Views\candidats.php(294): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidats', 'C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\candidats.php', 294)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\candidats.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('candidats', [], true)
+ 5 APPPATH\Controllers\CandidatureController.php(109): view('candidats', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->candidates('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-18 20:06:55 --> ErrorException: Undefined variable $candidate
+[Method: GET, Route: candidats/1]
+in APPPATH\Views\candidats.php on line 299.
+ 1 APPPATH\Views\candidats.php(299): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $candidate', 'C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\candidats.php', 299)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\candidats.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('candidats', [], true)
+ 5 APPPATH\Controllers\CandidatureController.php(99): view('candidats', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->candidates('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-18 20:16:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 20:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 20:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-18 20:18:24 --> Error: Class "App\Controllers\CandidatModel" not found
+[Method: GET, Route: candidats]
+in APPPATH\Controllers\CandidatureController.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-18 20:19:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "candidats/index.php"
+[Method: GET, Route: candidats]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('candidats/index.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('candidats/index', [], true)
+ 3 APPPATH\Controllers\CandidatureController.php(16): view('candidats/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-18 20:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-18 20:22:12 --> ErrorException: Undefined variable $offre
+[Method: GET, Route: candidats]
+in APPPATH\Views\candidats.php on line 290.
+ 1 APPPATH\Views\candidats.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $offre', 'C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\candidats.php', 290)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\candidats.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('candidats', [], true)
+ 5 APPPATH\Controllers\CandidatureController.php(16): view('candidats', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-18 20:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 20:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 20:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-18 20:27:14 --> ErrorException: Undefined variable $offre
+[Method: GET, Route: candidats]
+in APPPATH\Views\candidats.php on line 290.
+ 1 APPPATH\Views\candidats.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $offre', 'C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\candidats.php', 290)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\candidats.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('candidats', [], true)
+ 5 APPPATH\Controllers\CandidatureController.php(16): view('candidats', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-18 20:33:06 --> ErrorException: Undefined variable $offre
+[Method: GET, Route: candidats]
+in APPPATH\Views\candidats.php on line 290.
+ 1 APPPATH\Views\candidats.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $offre', 'C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\candidats.php', 290)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\candidats.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('candidats', [], true)
+ 5 APPPATH\Controllers\CandidatureController.php(16): view('candidats', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-18 20:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-18 20:42:13 --> ArgumentCountError: Too few arguments to function App\Controllers\CandidatureController::index(), 0 passed in C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: candidats]
+in APPPATH\Controllers\CandidatureController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-18 20:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-18 20:49:59 --> ArgumentCountError: Too few arguments to function App\Controllers\CandidatureController::index(), 0 passed in C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: candidats]
+in APPPATH\Controllers\CandidatureController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-18 20:52:13 --> ArgumentCountError: Too few arguments to function App\Controllers\CandidatureController::index(), 0 passed in C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: candidats]
+in APPPATH\Controllers\CandidatureController.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CandidatureController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CandidatureController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-18 20:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 20:54:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 20:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 20:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-11-18 20:57:07 --> ParseError: syntax error, unexpected token "public", expecting end of file
+[Method: GET, Route: candidats/accepter/1]
+in APPPATH\Controllers\CandidatureController.php on line 15.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Controllers\\CandidatureController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CandidatureController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CandidatureController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\CandidatureController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-18 20:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 21:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 21:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 21:12:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 21:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 21:19:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 21:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 21:57:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 22:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 22:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 22:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 22:46:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 22:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 22:49:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 22:49:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 23:38:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 23:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-18 23:41:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

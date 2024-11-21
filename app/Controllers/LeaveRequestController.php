@@ -38,4 +38,63 @@ class LeaveRequestController extends Controller
             return redirect()->to('/leave-request')->withInput()->with('errors', $this->validator->getErrors());
         }
     }
+    public function listRH()
+    {
+        $model = new LeaveRequestModel();
+        $leaveRequests = $model->findAll();
+
+        return view('leave_requests_rh', ['leaveRequests' => $leaveRequests]);
+    }
+
+    // Méthode pour accepter une demande
+    public function accept($id)
+    {
+        $model = new LeaveRequestModel();
+        $leaveRequest = $model->find($id);
+
+        if ($leaveRequest && $leaveRequest->status === 'pending') {
+            $leaveRequest['status'] = 'accepted';
+            $leaveRequest['notification_sent'] = 1;
+            $model->save($leaveRequest);
+
+            // Envoyer une notification
+            $this->sendNotification($leaveRequest, 'Votre demande de congé a été acceptée.');
+        }
+
+        return redirect()->to('/leave-requests-rh')->with('success', 'Demande acceptée avec succès.');
+    }
+
+    // Méthode pour refuser une demande
+    public function reject($id)
+    {
+        $model = new LeaveRequestModel();
+        $leaveRequest = $model->find($id);
+
+        if ($leaveRequest && $leaveRequest->status === 'pending') {
+            $leaveRequest['status'] = 'rejected';
+            $leaveRequest['notification_sent'] = 1;
+            $model->save($leaveRequest);
+
+            // Envoyer une notification
+            $this->sendNotification($leaveRequest, 'Votre demande de congé a été refusée.');
+        }
+
+        return redirect()->to('/leave-requests-rh')->with('success', 'Demande refusée avec succès.');
+    }
+
+    // Méthode pour envoyer une notification
+    private function sendNotification($leaveRequest, $message)
+    {
+        $email = \Config\Services::email();
+
+        $email->setTo('employee@example.com'); // Remplacez par $leaveRequest['employee_email'] si disponible
+        $email->setSubject('Notification de Congé');
+        $email->setMessage($message);
+
+        if ($email->send()) {
+            log_message('info', 'Notification envoyée à ' . $leaveRequest['employee_name']);
+        } else {
+            log_message('error', 'Erreur lors de l\'envoi de la notification.');
+        }
+    }
 }

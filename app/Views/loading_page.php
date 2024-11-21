@@ -274,9 +274,7 @@
                     Gestion RH
                 </div>
                 <nav class="nav-buttons">
-                    <button class="button button-ghost">Accueil</button>
-                    <button class="button button-ghost">À propos</button>
-                    <button class="button button-primary">Contact</button>
+                    <a href="<?= base_url('login'); ?>"><button class="button button-primary" >Connexion</button></a>    
                 </nav>  
             </div>
         </header>

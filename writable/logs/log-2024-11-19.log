@@ -1,0 +1,113 @@
+INFO - 2024-11-19 00:15:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 09:43:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 09:44:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 09:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 13:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 13:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 13:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 13:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 13:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-11-19 13:25:12 --> Error connecting to the database: mysqli_sql_exception: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\PC\Desktop\myApp\myApp\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 C:\Users\PC\Desktop\myApp\myApp\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'ci4_db', 3306, '', 0)
+#1 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\PC\Desktop\myApp\myApp\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\PC\Desktop\myApp\myApp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\PC\Desktop\myApp\myApp\app\Controllers\loading_pageController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(933): App\Controllers\Loading_pageController->index()
+#8 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loading_pageController))
+#9 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\PC\Desktop\myApp\myApp\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\PC\Desktop\myApp\myApp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\PC\Desktop\myApp\myApp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\PC\Desktop\myApp\myApp\system\rewrite.php(44): require_once('C:\\Users\\PC\\Des...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée in C:\Users\PC\Desktop\myApp\myApp\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\PC\Desktop\myApp\myApp\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\PC\Desktop\myApp\myApp\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\PC\Desktop\myApp\myApp\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\PC\Desktop\myApp\myApp\app\Controllers\loading_pageController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(933): App\Controllers\Loading_pageController->index()
+#7 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loading_pageController))
+#8 C:\Users\PC\Desktop\myApp\myApp\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\PC\Desktop\myApp\myApp\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\PC\Desktop\myApp\myApp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\PC\Desktop\myApp\myApp\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\PC\Desktop\myApp\myApp\system\rewrite.php(44): require_once('C:\\Users\\PC\\Des...')
+#13 {main}
+CRITICAL - 2024-11-19 13:25:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `offres`
+WHERE `offres`.`deleted_at` IS NULL', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\loading_pageController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Loading_pageController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Loading_pageController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-19 13:27:57 --> ErrorException: Undefined variable $offre
+[Method: GET, Route: offres]
+in APPPATH\Views\offres.php on line 213.
+ 1 APPPATH\Views\offres.php(213): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $offre', 'C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\offres.php', 213)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\offres.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('offres', [], true)
+ 5 APPPATH\Controllers\OffreController.php(17): view('offres', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OffreController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OffreController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-19 13:28:12 --> ErrorException: Undefined variable $offre
+[Method: GET, Route: offres]
+in APPPATH\Views\offres.php on line 213.
+ 1 APPPATH\Views\offres.php(213): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $offre', 'C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\offres.php', 213)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\offres.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('offres', [], true)
+ 5 APPPATH\Controllers\OffreController.php(17): view('offres', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OffreController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OffreController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+CRITICAL - 2024-11-19 13:28:13 --> ErrorException: Undefined variable $offre
+[Method: GET, Route: offres]
+in APPPATH\Views\offres.php on line 213.
+ 1 APPPATH\Views\offres.php(213): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $offre', 'C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\offres.php', 213)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\PC\\Desktop\\myApp\\myApp\\app\\Views\\offres.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('offres', [], true)
+ 5 APPPATH\Controllers\OffreController.php(17): view('offres', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\OffreController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OffreController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\PC\\Desktop\\myApp\\myApp\\public\\index.php')
+INFO - 2024-11-19 13:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 13:29:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 13:29:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 13:31:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 13:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 13:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-11-19 13:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
