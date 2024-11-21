@@ -1,11 +1,10 @@
 <?php
 namespace App\Controllers;
+use CodeIgniter\Controller;
 
 use App\Models\CandidatureModel;
 use Dompdf\Dompdf;
 use Dompdf\Options;
-use CodeIgniter\Controller;
-
 
 class PDFController extends Controller
 {
