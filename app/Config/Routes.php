@@ -45,4 +45,11 @@ $routes->get('/chatgpt', 'ChatGPTController::index');
 $routes->post('chatgpt_view/generate', 'ChatGPTController::generate');
 
 
+    $routes->get('gestion_employee', 'EmployeeController::index'); // List all employees
+    $routes->get('gestion_employee/add', 'EmployeeController::create'); // Show Add Employee form
+    $routes->post('gestion_employee/add', 'EmployeeController::add'); // Handle form submission to add employee
+    $routes->get('gestion_employee/edit/(:num)', 'EmployeeController::edit/$1'); // Show Edit Employee form
+    $routes->post('gestion_employee/edit/(:num)', 'EmployeeController::update/$1'); // Handle form submission to update employee
+    $routes->get('gestion_employee/delete/(:num)', 'EmployeeController::delete/$1'); // Handle delete employee
+
 

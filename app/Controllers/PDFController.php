@@ -4,8 +4,10 @@ namespace App\Controllers;
 use App\Models\CandidatureModel;
 use Dompdf\Dompdf;
 use Dompdf\Options;
+use CodeIgniter\Controller;
 
-class PDFController extends BaseController
+
+class PDFController extends Controller
 {
     public function generateReceipt($id)
     {

@@ -13,8 +13,8 @@
         "bold": "poppins_bold_87c49bf24d72f01a4af573680817521f"
     },
     "inter": {
-        "normal": "C:\\Users\\PC\\Desktop\\myApp\\myApp\\vendor\\dompdf\\dompdf\/lib\/fonts\/inter_normal_4f95092608a03c140dccd33606c19f31",
-        "500": "C:\\Users\\PC\\Desktop\\myApp\\myApp\\vendor\\dompdf\\dompdf\/lib\/fonts\/inter_500_3f435dc727a887d3a9c0ddd0afecf691",
-        "600": "inter_600_9bfe13c942a9c8fb0ff92d25ab822ed4"
+        "normal": "D:\\project\\Gestion_RH\\vendor\\dompdf\\dompdf\/lib\/fonts\/inter_normal_4f95092608a03c140dccd33606c19f31",
+        "500": "inter_500_3f435dc727a887d3a9c0ddd0afecf691",
+        "600": "D:\\project\\Gestion_RH\\vendor\\dompdf\\dompdf\/lib\/fonts\/inter_600_9bfe13c942a9c8fb0ff92d25ab822ed4"
     }
 }
