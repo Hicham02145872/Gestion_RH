@@ -71,8 +71,7 @@
                     <p>Veuillez remplir tous les champs obligatoires marqués d'un astérisque (*)</p>
                 </div>
 
-                <form id="candidatureForm" action="/submit-candidature/" method="post" enctype="multipart/form-data">
-                <input type="hidden" name="offre_id" value="<?= $offre->id ?>">
+                <form id="candidatureForm" action="/submit-candidature" method="post" enctype="multipart/form-data">
                     <div class="form-section">
                         <h2>Informations Personnelles</h2>
                         <div class="form-grid">
