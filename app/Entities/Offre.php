@@ -14,5 +14,4 @@ class Offre extends Entity
         'salaire' => null,
     ];
 
-    // Optional: Define any mutators or custom methods here if needed
 }
